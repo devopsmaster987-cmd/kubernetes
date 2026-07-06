@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: vpromc
+  name: vprocache01
+spec:
+  ports:
+    - name: memchached
+      port: 11211
+      protocol: TCP
+      targetPort: memcached
+  selector:
+    app: vpromc
+  type: ClusterIP
+
