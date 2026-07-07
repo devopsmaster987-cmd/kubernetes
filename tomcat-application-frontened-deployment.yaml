@@ -37,7 +37,7 @@ spec:
           command:
             - sh
             - -c
-            - until nslookup vpromq01; do echo waiting for memcache; sleep 2; done;
+            - until nslookup rmq01; do echo waiting for memcache; sleep 2; done;
 
       containers:
         - name: vproapp
