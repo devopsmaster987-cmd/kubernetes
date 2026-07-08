@@ -35,4 +35,4 @@ spec:
                   key: rmq-pass
 
             - name: RABBITMQ_DEFAULT_USER
-              value: "guest"
+              value: "test"
